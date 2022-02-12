@@ -1,5 +1,5 @@
 header {
-  min-height: 90vh;
+  min-height: 100vh;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.3)),
     #0a0b08 url("../../images/headerBg.png") right no-repeat;
   animation: bg 3s ease;
@@ -7,6 +7,41 @@ header {
   color: #fff;
   font-family: $primaryFont;
   position: relative;
+
+  nav {
+    @include flex(space-between, center);
+    padding: 15px 50px;
+    background-color: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    animation: fade-in 3s forwards 2s;
+
+    img {
+      height: 70px;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    .links {
+      @include flex(center, center);
+
+      li {
+        padding: 0 30px;
+        font-size: 1.5rem;
+        transition: $transition;
+
+        a {
+          color: #fff;
+          text-decoration: none;
+        }
+
+        &:hover {
+          opacity: 0.6;
+        }
+      }
+    }
+  }
 
   h1 {
     font-size: 6rem;
@@ -53,5 +88,14 @@ header {
   }
   to {
     top: 50%;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }

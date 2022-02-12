@@ -1,5 +1,5 @@
 header {
-  min-height: 90vh;
+  min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(17, 32, 0, 0.3))), #0a0b08 url("../../images/headerBg.png") right no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.3)), #0a0b08 url("../../images/headerBg.png") right no-repeat;
   -webkit-animation: bg 3s ease;
@@ -8,6 +8,59 @@ header {
   color: #fff;
   font-family: "Titillium Web", sans-serif;
   position: relative;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  -webkit-animation: fade-in 3s forwards 2s;
+          animation: fade-in 3s forwards 2s;
+}
+
+header nav img {
+  height: 70px;
+}
+
+header nav ul {
+  list-style-type: none;
+}
+
+header nav .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .links li {
+  padding: 0 30px;
+  font-size: 1.5rem;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+header nav .links li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header nav .links li:hover {
+  opacity: 0.6;
 }
 
 header h1 {
@@ -83,6 +136,24 @@ header h2 {
   }
   to {
     top: 50%;
+  }
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
 
