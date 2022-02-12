@@ -1,0 +1,57 @@
+header {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.3)),
+    #0a0b08 url("../../images/headerBg.png") right no-repeat;
+  animation: bg 3s ease;
+  background-size: 30%;
+  color: #fff;
+  font-family: $primaryFont;
+  position: relative;
+
+  h1 {
+    font-size: 6rem;
+    font-weight: 500;
+    position: absolute;
+    top: 30%;
+    left: 15rem;
+    animation: headerOne 3s ease;
+  }
+
+  h2 {
+    font-weight: 500;
+    font-size: 2.5rem;
+    position: absolute;
+    top: 50%;
+    left: 17rem;
+    animation: headerTwo 2.5s ease;
+    max-width: 500px;
+    text-align: center;
+  }
+}
+
+@keyframes bg {
+  from {
+    background-position: 150%;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+@keyframes headerOne {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 30%;
+  }
+}
+
+@keyframes headerTwo {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 50%;
+  }
+}

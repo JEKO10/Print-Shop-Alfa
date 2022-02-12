@@ -1,4 +1,95 @@
-body {
-  background-color: #000;
+header {
+  min-height: 90vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(17, 32, 0, 0.3))), #0a0b08 url("../../images/headerBg.png") right no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.3)), #0a0b08 url("../../images/headerBg.png") right no-repeat;
+  -webkit-animation: bg 3s ease;
+          animation: bg 3s ease;
+  background-size: 30%;
+  color: #fff;
+  font-family: "Titillium Web", sans-serif;
+  position: relative;
+}
+
+header h1 {
+  font-size: 6rem;
+  font-weight: 500;
+  position: absolute;
+  top: 30%;
+  left: 15rem;
+  -webkit-animation: headerOne 3s ease;
+          animation: headerOne 3s ease;
+}
+
+header h2 {
+  font-weight: 500;
+  font-size: 2.5rem;
+  position: absolute;
+  top: 50%;
+  left: 17rem;
+  -webkit-animation: headerTwo 2.5s ease;
+          animation: headerTwo 2.5s ease;
+  max-width: 500px;
+  text-align: center;
+}
+
+@-webkit-keyframes bg {
+  from {
+    background-position: 150%;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+@keyframes bg {
+  from {
+    background-position: 150%;
+  }
+  to {
+    background-position: right;
+  }
+}
+
+@-webkit-keyframes headerOne {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 30%;
+  }
+}
+
+@keyframes headerOne {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 30%;
+  }
+}
+
+@-webkit-keyframes headerTwo {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+@keyframes headerTwo {
+  from {
+    top: -50%;
+  }
+  to {
+    top: 50%;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 /*# sourceMappingURL=main.css.map */
