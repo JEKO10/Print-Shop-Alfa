@@ -1,36 +1,40 @@
 .large {
-  //   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), #426e86;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)),
-    url("../../images/lar.jpg") center/cover;
+    url("../../images/large.jpg") center/cover no-repeat;
   color: #fff;
   min-height: 100vh;
   padding: 0 30px;
   @include flex(center, center);
+  flex-direction: column;
   font-family: $primaryFont;
   text-align: center;
 
   h1 {
     font-size: 5rem;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   h3 {
     font-size: 2rem;
-    max-width: 600px;
-    margin: 0 auto 3rem auto;
-    font-weight: 600;
+    max-width: 700px;
+    margin: 0 auto 3rem;
+    font-weight: 500;
   }
 
   a {
+    display: inline-block;
     background-color: #426e86;
     color: #000;
     font-size: 2rem;
     font-weight: 600;
     padding: 15px 50px;
     border-radius: 20px;
+    transition: $transition;
 
     &:hover {
-      color: purple;
+      color: #fff;
+      background-color: transparent;
+      border: 1px solid #426e86;
     }
   }
 }

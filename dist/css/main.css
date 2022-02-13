@@ -1,9 +1,6 @@
 header {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.4)), to(rgba(17, 32, 0, 0.3))), #0a0b08 url("../../images/headerBg.png") right no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(17, 32, 0, 0.3)), #0a0b08 url("../../images/headerBg.png") right no-repeat;
-  -webkit-animation: bg 3s ease;
-          animation: bg 3s ease;
+  background: #0a0b08;
   background-size: 30%;
   color: #fff;
   font-family: "Titillium Web", sans-serif;
@@ -62,79 +59,111 @@ header nav .links li:hover {
   opacity: 0.6;
 }
 
-header h1 {
+header > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80vh;
+}
+
+header > div > div {
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+header > div > div h1 {
   font-size: 6rem;
   font-weight: 500;
-  position: absolute;
-  top: 30%;
-  left: 6rem;
   -webkit-animation: headerOne 3s ease;
           animation: headerOne 3s ease;
 }
 
-header h2 {
+header > div > div h2 {
   font-weight: 500;
   font-size: 2.5rem;
-  position: absolute;
-  top: 50%;
-  left: 9rem;
   -webkit-animation: headerTwo 2.5s ease;
           animation: headerTwo 2.5s ease;
   max-width: 500px;
-  text-align: center;
+  margin: 0 auto 3rem;
 }
 
-@-webkit-keyframes bg {
+header > div img {
+  height: 550px;
+  -webkit-animation: img 3s ease;
+          animation: img 3s ease;
+}
+
+@-webkit-keyframes img {
   from {
-    background-position: 150%;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
   }
   to {
-    background-position: right;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
-@keyframes bg {
+@keyframes img {
   from {
-    background-position: 150%;
+    -webkit-transform: translateX(120%);
+            transform: translateX(120%);
   }
   to {
-    background-position: right;
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
   }
 }
 
 @-webkit-keyframes headerOne {
   from {
-    top: -50%;
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
   }
   to {
-    top: 30%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes headerOne {
   from {
-    top: -50%;
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
   }
   to {
-    top: 30%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @-webkit-keyframes headerTwo {
   from {
-    top: -50%;
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
   }
   to {
-    top: 50%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
 @keyframes headerTwo {
   from {
-    top: -50%;
+    -webkit-transform: translateY(-500%);
+            transform: translateY(-500%);
   }
   to {
-    top: 50%;
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
   }
 }
 
@@ -157,8 +186,8 @@ header h2 {
 }
 
 .large {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../../images/lar.jpg") center/cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../../images/lar.jpg") center/cover;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../../images/large.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../../images/large.jpg") center/cover no-repeat;
   color: #fff;
   min-height: 100vh;
   padding: 0 30px;
@@ -171,23 +200,81 @@ header h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   font-family: "Titillium Web", sans-serif;
   text-align: center;
 }
 
 .large h1 {
   font-size: 5rem;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .large h3 {
   font-size: 2rem;
-  max-width: 600px;
-  margin: 0 auto 3rem auto;
-  font-weight: 600;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-weight: 500;
 }
 
 .large a {
+  display: inline-block;
+  background-color: #426e86;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 15px 50px;
+  border-radius: 20px;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+.large a:hover {
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #426e86;
+}
+
+.shirt {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(17, 32, 0, 0))), #fef8ea;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(17, 32, 0, 0)), #fef8ea;
+  font-family: "Titillium Web", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.shirt div {
+  padding-left: 10px;
+  text-align: center;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+}
+
+.shirt div h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.shirt div h3 {
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem;
+  font-weight: 600;
+}
+
+.shirt div a {
+  display: inline-block;
   background-color: #426e86;
   color: #000;
   font-size: 2rem;
@@ -196,8 +283,12 @@ header h2 {
   border-radius: 20px;
 }
 
-.large a:hover {
-  color: purple;
+.shirt div a:hover {
+  color: #800080;
+}
+
+.shirt img {
+  height: 700px;
 }
 
 * {
@@ -205,5 +296,9 @@ header h2 {
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */

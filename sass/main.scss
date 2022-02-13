@@ -1,9 +1,14 @@
 @import "config";
 @import "header";
 @import "large";
+@import "shirt";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
 }

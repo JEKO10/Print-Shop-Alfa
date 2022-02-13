@@ -1,0 +1,41 @@
+.shirt {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(17, 32, 0, 0)), #fef8ea;
+  font-family: $primaryFont;
+  @include flex(space-between, center);
+
+  div {
+    padding-left: 10px;
+    text-align: center;
+    flex: 2;
+
+    h1 {
+      font-size: 5rem;
+      font-weight: 600;
+    }
+
+    h3 {
+      font-size: 2rem;
+      max-width: 600px;
+      margin: 0 auto 3rem;
+      font-weight: 600;
+    }
+
+    a {
+      display: inline-block;
+      background-color: #426e86;
+      color: #000;
+      font-size: 2rem;
+      font-weight: 600;
+      padding: 15px 50px;
+      border-radius: 20px;
+
+      &:hover {
+        color: #800080;
+      }
+    }
+  }
+
+  img {
+    height: 700px;
+  }
+}
