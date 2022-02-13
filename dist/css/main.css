@@ -4,6 +4,7 @@ header {
   background-size: 30%;
   color: #fff;
   font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
 }
 
 header nav {
@@ -103,8 +104,8 @@ header > div img {
 
 @-webkit-keyframes img {
   from {
-    -webkit-transform: translateX(120%);
-            transform: translateX(120%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
     -webkit-transform: translateX(0%);
@@ -114,8 +115,8 @@ header > div img {
 
 @keyframes img {
   from {
-    -webkit-transform: translateX(120%);
-            transform: translateX(120%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   to {
     -webkit-transform: translateX(0%);
@@ -228,20 +229,17 @@ header > div img {
   font-weight: 600;
   padding: 15px 50px;
   border-radius: 20px;
-  -webkit-transition: all 500ms ease;
-  transition: all 500ms ease;
 }
 
 .large a:hover {
-  color: #fff;
-  background-color: transparent;
-  border: 1px solid #426e86;
+  color: #800080;
 }
 
 .shirt {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(17, 32, 0, 0))), #fef8ea;
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(17, 32, 0, 0)), #fef8ea;
   font-family: "Titillium Web", sans-serif;
+  overflow-x: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,14 +289,59 @@ header > div img {
   height: 700px;
 }
 
+.other {
+  min-height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/other.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/other.jpg") center/cover no-repeat;
+  color: #fff;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+.other h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+
+.other h3 {
+  font-size: 2rem;
+  max-width: 700px;
+  margin: 0 auto 3rem;
+  font-weight: 500;
+}
+
+.other a {
+  display: inline-block;
+  background-color: #426e86;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 15px 50px;
+  border-radius: 20px;
+}
+
+.other a:hover {
+  color: #800080;
+}
+
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-}
-
-body {
-  overflow-x: hidden;
 }
 /*# sourceMappingURL=main.css.map */

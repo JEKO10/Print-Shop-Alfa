@@ -4,6 +4,7 @@ header {
   background-size: 30%;
   color: #fff;
   font-family: $primaryFont;
+  overflow-x: hidden;
 
   nav {
     @include flex(space-between, center);
@@ -72,7 +73,7 @@ header {
 
 @keyframes img {
   from {
-    transform: translateX(120%);
+    transform: translateX(100%);
   }
   to {
     transform: translateX(0%);

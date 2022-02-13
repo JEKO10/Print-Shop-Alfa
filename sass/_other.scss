@@ -1,8 +1,8 @@
-.large {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)),
-    url("../../images/large.jpg") center/cover no-repeat;
-  color: #fff;
+.other {
   min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("../../images/other.jpg") center/cover no-repeat;
+  color: #fff;
   padding: 0 30px;
   @include flex(center, center);
   flex-direction: column;

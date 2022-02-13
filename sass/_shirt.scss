@@ -1,6 +1,7 @@
 .shirt {
   background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(17, 32, 0, 0)), #fef8ea;
   font-family: $primaryFont;
+  overflow-x: hidden;
   @include flex(space-between, center);
 
   div {
