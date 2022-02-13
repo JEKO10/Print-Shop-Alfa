@@ -7,7 +7,6 @@ header {
   background-size: 30%;
   color: #fff;
   font-family: "Titillium Web", sans-serif;
-  position: relative;
 }
 
 header nav {
@@ -68,7 +67,7 @@ header h1 {
   font-weight: 500;
   position: absolute;
   top: 30%;
-  left: 15rem;
+  left: 6rem;
   -webkit-animation: headerOne 3s ease;
           animation: headerOne 3s ease;
 }
@@ -78,7 +77,7 @@ header h2 {
   font-size: 2.5rem;
   position: absolute;
   top: 50%;
-  left: 17rem;
+  left: 9rem;
   -webkit-animation: headerTwo 2.5s ease;
           animation: headerTwo 2.5s ease;
   max-width: 500px;
@@ -155,6 +154,50 @@ header h2 {
   to {
     opacity: 1;
   }
+}
+
+.large {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../../images/lar.jpg") center/cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../../images/lar.jpg") center/cover;
+  color: #fff;
+  min-height: 100vh;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  text-align: center;
+}
+
+.large h1 {
+  font-size: 5rem;
+  font-weight: 500;
+}
+
+.large h3 {
+  font-size: 2rem;
+  max-width: 600px;
+  margin: 0 auto 3rem auto;
+  font-weight: 600;
+}
+
+.large a {
+  background-color: #426e86;
+  color: #000;
+  font-size: 2rem;
+  font-weight: 600;
+  padding: 15px 50px;
+  border-radius: 20px;
+}
+
+.large a:hover {
+  color: purple;
 }
 
 * {

@@ -1,0 +1,36 @@
+.large {
+  //   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), #426e86;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)),
+    url("../../images/lar.jpg") center/cover;
+  color: #fff;
+  min-height: 100vh;
+  padding: 0 30px;
+  @include flex(center, center);
+  font-family: $primaryFont;
+  text-align: center;
+
+  h1 {
+    font-size: 5rem;
+    font-weight: 500;
+  }
+
+  h3 {
+    font-size: 2rem;
+    max-width: 600px;
+    margin: 0 auto 3rem auto;
+    font-weight: 600;
+  }
+
+  a {
+    background-color: #426e86;
+    color: #000;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 15px 50px;
+    border-radius: 20px;
+
+    &:hover {
+      color: purple;
+    }
+  }
+}
