@@ -291,8 +291,8 @@ header > div img {
 
 .other {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url("../../images/other.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../images/other.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../../images/other.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../../images/other.jpg") center/cover no-repeat;
   color: #fff;
   padding: 0 30px;
   display: -webkit-box;
@@ -336,6 +336,55 @@ header > div img {
 
 .other a:hover {
   color: #800080;
+}
+
+footer {
+  background-color: #102a42;
+  min-height: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Titillium Web", sans-serif;
+  padding: 0 50px;
+}
+
+footer img {
+  height: 70px;
+}
+
+footer ul {
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer ul li {
+  padding: 0 30px;
+  font-size: 1.5rem;
+  -webkit-transition: all 500ms ease;
+  transition: all 500ms ease;
+}
+
+footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+footer ul li:hover {
+  opacity: 0.6;
 }
 
 * {
