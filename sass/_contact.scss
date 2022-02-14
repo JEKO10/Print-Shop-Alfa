@@ -1,0 +1,76 @@
+.contactBody {
+  background-color: #000;
+  font-family: $primaryFont;
+
+  header {
+    min-height: 100vh;
+    background: url("../../images/contact.jpg") center/cover no-repeat;
+    animation: fade-in 2s forwards;
+
+    nav {
+      animation: fade-in 2s forwards 1s;
+    }
+  }
+
+  section {
+    text-align: center;
+  }
+
+  .s1 {
+    background-color: green;
+
+    h1 {
+      font-size: 4rem;
+      padding: 0 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
+      padding: 0 10px;
+    }
+  }
+
+  .s2 {
+    background-color: red;
+
+    h1 {
+      font-size: 4rem;
+      padding: 0 10px;
+    }
+
+    ul {
+      margin-bottom: 2rem;
+
+      li {
+        font-size: 2rem;
+
+        &:first-of-type {
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .s3 {
+    background-color: blue;
+
+    h1 {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+
+    img {
+      height: 550px;
+      margin-top: 5rem;
+    }
+  }
+
+  .s4 {
+    background-color: blue;
+
+    h1 {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+  }
+}

@@ -116,24 +116,6 @@ header > div img {
   }
 }
 
-@-webkit-keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fade-in {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
 .large {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../../images/large.jpg") center/cover no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../../images/large.jpg") center/cover no-repeat;
@@ -453,6 +435,85 @@ footer ul li:hover {
   }
 }
 
+.contactBody {
+  background-color: #000;
+  font-family: "Titillium Web", sans-serif;
+}
+
+.contactBody header {
+  min-height: 100vh;
+  background: url("../../images/contact.jpg") center/cover no-repeat;
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;
+}
+
+.contactBody header nav {
+  -webkit-animation: fade-in 2s forwards 1s;
+          animation: fade-in 2s forwards 1s;
+}
+
+.contactBody section {
+  text-align: center;
+}
+
+.contactBody .s1 {
+  background-color: green;
+}
+
+.contactBody .s1 h1 {
+  font-size: 4rem;
+  padding: 0 10px;
+}
+
+.contactBody .s1 h2 {
+  font-size: 2.5rem;
+  padding: 0 10px;
+}
+
+.contactBody .s2 {
+  background-color: red;
+}
+
+.contactBody .s2 h1 {
+  font-size: 4rem;
+  padding: 0 10px;
+}
+
+.contactBody .s2 ul {
+  margin-bottom: 2rem;
+}
+
+.contactBody .s2 ul li {
+  font-size: 2rem;
+}
+
+.contactBody .s2 ul li:first-of-type {
+  font-weight: 700;
+}
+
+.contactBody .s3 {
+  background-color: blue;
+}
+
+.contactBody .s3 h1 {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
+.contactBody .s3 img {
+  height: 550px;
+  margin-top: 5rem;
+}
+
+.contactBody .s4 {
+  background-color: blue;
+}
+
+.contactBody .s4 h1 {
+  font-size: 2rem;
+  padding: 0 10px;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -513,5 +574,23 @@ nav .links li a {
 
 nav .links li:hover {
   opacity: 0.6;
+}
+
+@-webkit-keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 /*# sourceMappingURL=main.css.map */

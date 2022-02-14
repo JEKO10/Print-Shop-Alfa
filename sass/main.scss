@@ -6,6 +6,7 @@
 @import "other";
 @import "footer";
 @import "service";
+@import "contact";
 
 * {
   margin: 0;
@@ -47,5 +48,14 @@ nav {
         opacity: 0.6;
       }
     }
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
