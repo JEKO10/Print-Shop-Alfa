@@ -1,6 +1,6 @@
 footer {
   background-color: hsl(209, 61%, 16%);
-  min-height: 20vh;
+  min-height: 25vh;
   @include flex(space-between, center);
   font-family: $primaryFont;
   padding: 0 50px;

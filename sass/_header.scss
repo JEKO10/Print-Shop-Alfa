@@ -6,41 +6,6 @@ header {
   font-family: $primaryFont;
   overflow-x: hidden;
 
-  nav {
-    @include flex(space-between, center);
-    padding: 15px 50px;
-    background-color: rgba(0, 0, 0, 0.3);
-    opacity: 0;
-    animation: fade-in 3s forwards 2s;
-
-    img {
-      height: 70px;
-    }
-
-    ul {
-      list-style-type: none;
-    }
-
-    .links {
-      @include flex(center, center);
-
-      li {
-        padding: 0 30px;
-        font-size: 1.5rem;
-        transition: $transition;
-
-        a {
-          color: #fff;
-          text-decoration: none;
-        }
-
-        &:hover {
-          opacity: 0.6;
-        }
-      }
-    }
-  }
-
   > div {
     @include flex(space-between, center);
     height: 80vh;
