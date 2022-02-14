@@ -452,65 +452,67 @@ footer ul li:hover {
           animation: fade-in 2s forwards 1s;
 }
 
+.contactBody header #scroll {
+  height: 100px;
+  position: absolute;
+  right: 0;
+  bottom: 2rem;
+}
+
 .contactBody section {
   text-align: center;
 }
 
 .contactBody .s1 {
-  background-color: green;
+  background: url("../../images/contactt.png") center/cover no-repeat;
 }
 
 .contactBody .s1 h1 {
-  font-size: 4rem;
+  font-size: 4.5rem;
   padding: 0 10px;
+  margin-right: -35rem;
 }
 
-.contactBody .s1 h2 {
-  font-size: 2.5rem;
-  padding: 0 10px;
+.contactBody .s1 ul {
+  margin: 3rem 0;
+  margin-right: -35rem;
 }
 
-.contactBody .s2 {
-  background-color: red;
+.contactBody .s1 ul li {
+  font-size: 3rem;
 }
 
-.contactBody .s2 h1 {
-  font-size: 4rem;
-  padding: 0 10px;
-}
-
-.contactBody .s2 ul {
-  margin-bottom: 2rem;
-}
-
-.contactBody .s2 ul li {
-  font-size: 2rem;
-}
-
-.contactBody .s2 ul li:first-of-type {
+.contactBody .s1 ul li:first-of-type {
   font-weight: 700;
 }
 
-.contactBody .s3 {
+.contactBody .s2 {
   background-color: blue;
 }
 
-.contactBody .s3 h1 {
+.contactBody .s2 h1 {
   font-size: 2rem;
   padding: 0 10px;
 }
 
-.contactBody .s3 img {
+.contactBody .s2 img {
   height: 550px;
   margin-top: 5rem;
 }
 
-.contactBody .s4 {
-  background-color: blue;
+.contactBody .s3 {
+  background: #67ccda;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #67ccda), to(white));
+  background: linear-gradient(180deg, #67ccda 60%, white 100%);
 }
 
-.contactBody .s4 h1 {
-  font-size: 2rem;
+.contactBody .s3 h1 {
+  font-size: 4rem;
+  padding: 0 10px;
+}
+
+.contactBody .s3 h2 {
+  font-size: 2.5rem;
   padding: 0 10px;
 }
 

@@ -10,6 +10,13 @@
     nav {
       animation: fade-in 2s forwards 1s;
     }
+
+    #scroll {
+      height: 100px;
+      position: absolute;
+      right: 0;
+      bottom: 2rem;
+    }
   }
 
   section {
@@ -17,32 +24,21 @@
   }
 
   .s1 {
-    background-color: green;
+    // background-color: #67ccda;
+    background: url("../../images/contactt.png") center/cover no-repeat;
 
     h1 {
-      font-size: 4rem;
+      font-size: 4.5rem;
       padding: 0 10px;
-    }
-
-    h2 {
-      font-size: 2.5rem;
-      padding: 0 10px;
-    }
-  }
-
-  .s2 {
-    background-color: red;
-
-    h1 {
-      font-size: 4rem;
-      padding: 0 10px;
+      margin-right: -35rem;
     }
 
     ul {
-      margin-bottom: 2rem;
+      margin: 3rem 0;
+      margin-right: -35rem;
 
       li {
-        font-size: 2rem;
+        font-size: 3rem;
 
         &:first-of-type {
           font-weight: 700;
@@ -51,7 +47,7 @@
     }
   }
 
-  .s3 {
+  .s2 {
     background-color: blue;
 
     h1 {
@@ -65,11 +61,21 @@
     }
   }
 
-  .s4 {
-    background-color: blue;
+  .s3 {
+    background: rgb(103, 204, 218);
+    background: linear-gradient(
+      180deg,
+      rgba(103, 204, 218, 1) 60%,
+      rgba(255, 255, 255, 1) 100%
+    );
 
     h1 {
-      font-size: 2rem;
+      font-size: 4rem;
+      padding: 0 10px;
+    }
+
+    h2 {
+      font-size: 2.5rem;
       padding: 0 10px;
     }
   }
