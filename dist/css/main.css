@@ -541,7 +541,11 @@ footer ul li:hover {
   color: #fff;
 }
 
-.digitalBody .digital {
+.digitalBody .otherContainer img {
+  height: 300px !important;
+}
+
+.digitalBody .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,7 +562,7 @@ footer ul li:hover {
   overflow: auto;
 }
 
-.digitalBody .digital > div {
+.digitalBody .container > div {
   border: 1px solid #ccc;
   border-radius: 20px 20px 0px 0px;
   background: #f2f2f2;
@@ -566,13 +570,13 @@ footer ul li:hover {
   margin: 2rem 0;
 }
 
-.digitalBody .digital > div img {
+.digitalBody .container > div img {
   width: 100%;
   height: auto;
   border-radius: 20px 20px 0px 0px;
 }
 
-.digitalBody .digital > div .desc {
+.digitalBody .container > div .desc {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -588,7 +592,7 @@ footer ul li:hover {
   text-align: center;
 }
 
-.digitalBody .digital > div a {
+.digitalBody .container > div a {
   color: #000;
   text-decoration: none;
 }
