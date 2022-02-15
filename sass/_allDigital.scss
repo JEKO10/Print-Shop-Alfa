@@ -22,6 +22,10 @@
     padding: 0 20px;
   }
 
+  ul li {
+    font-size: 1.5rem;
+  }
+
   .gallery {
     @include flex(space-around, center);
     flex-wrap: wrap;
