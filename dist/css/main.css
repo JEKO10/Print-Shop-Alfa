@@ -117,8 +117,8 @@ header > div img {
 }
 
 .large {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../../images/large.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../../images/large.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(17, 32, 0, 0.3))), url("../images/large.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(17, 32, 0, 0.3)), url("../images/large.jpg") center/cover no-repeat;
   color: #fff;
   min-height: 100vh;
   padding: 0 30px;
@@ -221,8 +221,8 @@ header > div img {
 
 .other {
   min-height: 100vh;
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../../images/other.jpg") center/cover no-repeat;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../../images/other.jpg") center/cover no-repeat;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/other.jpg") center/cover no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/other.jpg") center/cover no-repeat;
   color: #fff;
   padding: 0 30px;
   display: -webkit-box;
@@ -355,7 +355,7 @@ footer ul li:hover {
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: url("../../images/card.jpg") center/cover no-repeat;
+  background: url("../images/card.jpg") center/cover no-repeat;
   -webkit-clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 100%, 0 100%, 0% 60%, 0 0);
           clip-path: polygon(50% 0%, 100% 0, 100% 0, 0 100%, 0 100%, 0% 60%, 0 0);
   -webkit-animation: right 1.5s ease-out;
@@ -380,7 +380,7 @@ footer ul li:hover {
   width: 100%;
   position: absolute;
   z-index: -1;
-  background: url("../../images/otherService.jpg") center/cover no-repeat;
+  background: url("../images/otherService.jpg") center/cover no-repeat;
   -webkit-clip-path: polygon(100% 0, 0% 100%, 100% 100%);
           clip-path: polygon(100% 0, 0% 100%, 100% 100%);
   -webkit-animation: left 1.5s ease-out;
@@ -442,7 +442,7 @@ footer ul li:hover {
 
 .contactBody header {
   min-height: 100vh;
-  background: url("../../images/contact.jpg") center/cover no-repeat;
+  background: url("../images/contact.jpg") center/cover no-repeat;
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
 }
@@ -470,7 +470,7 @@ footer ul li:hover {
 }
 
 .contactBody .s1 {
-  background: url("../../images/contactt.png") center/cover no-repeat;
+  background: url("../images/contactt.png") center/cover no-repeat;
 }
 
 .contactBody .s1 h1 {
@@ -520,6 +520,77 @@ footer ul li:hover {
 .contactBody .s3 h2 {
   font-size: 2.5rem;
   padding: 0 10px;
+}
+
+.digitalBody {
+  font-family: "Titillium Web", sans-serif;
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;
+  background-color: #67ccda;
+}
+
+.digitalBody nav {
+  -webkit-animation: fade-in 2s forwards 500ms;
+          animation: fade-in 2s forwards 500ms;
+}
+
+.digitalBody h1 {
+  font-size: 4rem;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  color: #fff;
+}
+
+.digitalBody .digital {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1800px;
+  padding-top: 6rem;
+  margin: 2rem 0;
+  overflow: auto;
+}
+
+.digitalBody .digital > div {
+  border: 1px solid #ccc;
+  border-radius: 20px 20px 0px 0px;
+  background: #f2f2f2;
+  width: 450px;
+  margin: 2rem 0;
+}
+
+.digitalBody .digital > div img {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.digitalBody .digital > div .desc {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 80px;
+  font-size: 1.5rem;
+  margin: 20px 15px;
+  text-align: center;
+}
+
+.digitalBody .digital > div a {
+  color: #000;
+  text-decoration: none;
 }
 
 * {

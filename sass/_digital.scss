@@ -1,0 +1,52 @@
+.digitalBody {
+  font-family: $primaryFont;
+  animation: fade-in 2s forwards;
+  background-color: #67ccda;
+
+  nav {
+    animation: fade-in 2s forwards 500ms;
+  }
+
+  h1 {
+    font-size: 4rem;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+    color: #fff;
+  }
+
+  .digital {
+    @include flex(space-around, center);
+    flex-wrap: wrap;
+    max-width: 1800px;
+    padding-top: 6rem;
+    margin: 2rem 0;
+    overflow: auto;
+
+    > div {
+      border: 1px solid #ccc;
+      border-radius: 20px 20px 0px 0px;
+      background: #f2f2f2;
+      width: 450px;
+      margin: 2rem 0;
+
+      img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      .desc {
+        @include flex(center, center);
+        height: 80px;
+        font-size: 1.5rem;
+        margin: 20px 15px;
+        text-align: center;
+      }
+
+      a {
+        color: #000;
+        text-decoration: none;
+      }
+    }
+  }
+}
