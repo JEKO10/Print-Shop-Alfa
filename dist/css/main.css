@@ -463,6 +463,12 @@ footer ul li:hover {
   text-align: center;
 }
 
+.contactBody .fp-tooltip {
+  color: #000 !important;
+  font-family: "Titillium Web", sans-serif !important;
+  font-weight: 600 !important;
+}
+
 .contactBody .s1 {
   background: url("../../images/contactt.png") center/cover no-repeat;
 }
@@ -487,7 +493,9 @@ footer ul li:hover {
 }
 
 .contactBody .s2 {
-  background-color: blue;
+  background: #67ccda;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #67ccda), to(white));
+  background: linear-gradient(180deg, #67ccda 60%, white 100%);
 }
 
 .contactBody .s2 h1 {
@@ -495,15 +503,13 @@ footer ul li:hover {
   padding: 0 10px;
 }
 
-.contactBody .s2 img {
+.contactBody .s2 iframe {
   height: 550px;
   margin-top: 5rem;
 }
 
 .contactBody .s3 {
-  background: #67ccda;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(60%, #67ccda), to(white));
-  background: linear-gradient(180deg, #67ccda 60%, white 100%);
+  background: #fff;
 }
 
 .contactBody .s3 h1 {

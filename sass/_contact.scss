@@ -23,6 +23,12 @@
     text-align: center;
   }
 
+  .fp-tooltip {
+    color: #000 !important;
+    font-family: $primaryFont !important;
+    font-weight: 600 !important;
+  }
+
   .s1 {
     // background-color: #67ccda;
     background: url("../../images/contactt.png") center/cover no-repeat;
@@ -48,26 +54,26 @@
   }
 
   .s2 {
-    background-color: blue;
-
-    h1 {
-      font-size: 2rem;
-      padding: 0 10px;
-    }
-
-    img {
-      height: 550px;
-      margin-top: 5rem;
-    }
-  }
-
-  .s3 {
     background: rgb(103, 204, 218);
     background: linear-gradient(
       180deg,
       rgba(103, 204, 218, 1) 60%,
       rgba(255, 255, 255, 1) 100%
     );
+
+    h1 {
+      font-size: 2rem;
+      padding: 0 10px;
+    }
+
+    iframe {
+      height: 550px;
+      margin-top: 5rem;
+    }
+  }
+
+  .s3 {
+    background: #fff;
 
     h1 {
       font-size: 4rem;
