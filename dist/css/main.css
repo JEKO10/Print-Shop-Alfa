@@ -524,9 +524,11 @@ footer ul li:hover {
 
 .digitalBody {
   font-family: "Titillium Web", sans-serif;
-  -webkit-animation: fade-in 2s forwards;
-          animation: fade-in 2s forwards;
-  background-color: #67ccda;
+  -webkit-animation: fade-in 1.5s forwards;
+          animation: fade-in 1.5s forwards;
+  background: #67ccda;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(80%, #67ccda), to(white));
+  background: linear-gradient(180deg, #67ccda 80%, white 100%);
 }
 
 .digitalBody nav {
@@ -595,6 +597,56 @@ footer ul li:hover {
 .digitalBody .container > div a {
   color: #000;
   text-decoration: none;
+}
+
+.allDigitalBody {
+  background: #67ccda;
+  font-family: "Titillium Web", sans-serif;
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;
+  color: #fff;
+  text-align: center;
+}
+
+.allDigitalBody nav {
+  -webkit-animation: fade-in 2s forwards 1s;
+          animation: fade-in 2s forwards 1s;
+}
+
+.allDigitalBody h1 {
+  font-size: 3rem;
+  margin: 2rem 0 3rem 0;
+  padding: 0 20px;
+}
+
+.allDigitalBody p {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  font-size: 1.5rem;
+  padding: 0 20px;
+}
+
+.allDigitalBody .gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  max-width: 1800px;
+  padding-top: 6rem;
+  margin: 2rem 0;
+  overflow: auto;
+}
+
+.allDigitalBody .gallery img {
+  border-radius: 20px;
+  height: 350px;
+  margin: 2rem 1rem;
 }
 
 * {

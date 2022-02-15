@@ -1,7 +1,13 @@
 .digitalBody {
   font-family: $primaryFont;
-  animation: fade-in 2s forwards;
-  background-color: #67ccda;
+  animation: fade-in 1.5s forwards;
+  // background-color: #67ccda;
+  background: rgb(103, 204, 218);
+  background: linear-gradient(
+    180deg,
+    rgba(103, 204, 218, 1) 80%,
+    rgba(255, 255, 255, 1) 100%
+  );
 
   nav {
     animation: fade-in 2s forwards 500ms;
