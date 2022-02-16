@@ -6,3 +6,15 @@ $transition: all 500ms ease;
   justify-content: $justify;
   align-items: $align;
 }
+
+@mixin mediaMedium {
+  @media screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaSmall {
+  @media screen and (max-width: 480px) {
+    @content;
+  }
+}

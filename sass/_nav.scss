@@ -1,9 +1,10 @@
-footer {
-  background-color: #102a42;
-  min-height: 25vh;
+nav {
   @include flex(space-between, center);
+  padding: 15px 50px;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  animation: fade-in 3s forwards 2s;
   font-family: $primaryFont;
-  padding: 0 50px;
 
   img {
     height: 70px;
@@ -11,6 +12,10 @@ footer {
 
   ul {
     list-style-type: none;
+    color: #fff;
+  }
+
+  .links {
     @include flex(center, center);
 
     li {
