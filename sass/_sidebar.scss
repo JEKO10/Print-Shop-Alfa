@@ -49,9 +49,11 @@
 .toggle {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 40px;
   z-index: 102;
+  opacity: 0;
+  animation: fade-in 3s forwards 2s;
 
   div {
     position: relative;

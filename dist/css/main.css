@@ -63,9 +63,12 @@
 .toggle {
   display: none;
   position: absolute;
-  top: 50px;
+  top: 45px;
   right: 40px;
   z-index: 102;
+  opacity: 0;
+  -webkit-animation: fade-in 3s forwards 2s;
+          animation: fade-in 3s forwards 2s;
 }
 
 .toggle div {
@@ -844,10 +847,79 @@ footer ul li:hover {
   margin: 2rem 1rem;
 }
 
+@media (max-width: 1200px) {
+  header > div > div h1 {
+    font-size: 5rem;
+    padding: 0 20px;
+  }
+  header > div > div h2 {
+    font-size: 2rem;
+    max-width: 500px;
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  header > div img {
+    width: 40%;
+    height: auto;
+  }
+  header > div > div h1 {
+    font-size: 3.5rem;
+  }
+  header > div > div h2 {
+    font-size: 2rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   nav ul,
   nav .links {
     display: none;
+  }
+  header > div > div h1 {
+    font-size: 3rem;
+  }
+  header > div > div h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  header {
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.7))), url("../images/toner.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url("../images/toner.jpg") center/cover no-repeat;
+  }
+  header > div img {
+    display: none;
+  }
+  header > div > div h1 {
+    font-size: 4rem;
+  }
+  header > div > div h2 {
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    padding: 15px 20px;
+  }
+  nav img {
+    height: 50px;
+  }
+  .toggle {
+    top: 40px;
+    right: 20px;
+  }
+  header > div > div h1 {
+    font-size: 3rem;
+    margin: 2rem 0;
+  }
+  header > div > div h2 {
+    font-size: 1.5rem;
+    padding: 0 15px;
+    margin: 0 auto 5rem;
   }
 }
 

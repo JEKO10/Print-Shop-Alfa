@@ -1,6 +1,103 @@
+@include mediaLarge {
+  header > div > div {
+    h1 {
+      font-size: 5rem;
+      padding: 0 20px;
+    }
+
+    h2 {
+      font-size: 2rem;
+      max-width: 500px;
+      padding: 0 20px;
+    }
+  }
+}
+
+@include mediaMediumLarge {
+  header > div {
+    img {
+      width: 40%;
+      height: auto;
+    }
+
+    > div {
+      h1 {
+        font-size: 3.5rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+}
+
 @include mediaMedium {
   nav ul,
   nav .links {
     display: none;
+  }
+
+  header > div {
+    > div {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@include mediaMediumLow {
+  header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+      url("../images/toner.jpg") center/cover no-repeat;
+
+    > div {
+      img {
+        display: none;
+      }
+
+      > div {
+        h1 {
+          font-size: 4rem;
+        }
+
+        h2 {
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+}
+
+@include mediaSmall {
+  nav {
+    padding: 15px 20px;
+
+    img {
+      height: 50px;
+    }
+  }
+
+  .toggle {
+    top: 40px;
+    right: 20px;
+  }
+
+  header > div > div {
+    h1 {
+      font-size: 3rem;
+      margin: 2rem 0;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      padding: 0 15px;
+      margin: 0 auto 5rem;
+    }
   }
 }
