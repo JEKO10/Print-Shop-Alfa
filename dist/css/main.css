@@ -7,7 +7,7 @@
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 101;
   -webkit-transform: translate(200%);
           transform: translate(200%);
   -webkit-transition: all 1s ease;
@@ -65,7 +65,7 @@
   position: absolute;
   top: 50px;
   right: 40px;
-  z-index: 2;
+  z-index: 102;
 }
 
 .toggle div {
