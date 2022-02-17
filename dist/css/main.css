@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&display=swap");
 .sidebar {
-  background-color: #102a42;
+  background-color: #67ccda;
   min-height: 100vh;
   width: 50vw;
   font-family: "Titillium Web", sans-serif;
@@ -347,7 +347,7 @@ header > div img {
 
 .large a {
   display: inline-block;
-  background-color: #426e86;
+  background-color: #67ccda;
   color: #000;
   font-size: 2rem;
   font-weight: 600;
@@ -397,7 +397,7 @@ header > div img {
 
 .shirt div a {
   display: inline-block;
-  background-color: #426e86;
+  background-color: #67ccda;
   color: #000;
   font-size: 2rem;
   font-weight: 600;
@@ -450,7 +450,7 @@ header > div img {
 
 .other a {
   display: inline-block;
-  background-color: #426e86;
+  background-color: #67ccda;
   color: #000;
   font-size: 2rem;
   font-weight: 600;
@@ -645,8 +645,16 @@ footer ul li:hover {
 }
 
 .contactBody {
-  background-color: #000;
   font-family: "Titillium Web", sans-serif;
+}
+
+.contactBody .toggle {
+  -webkit-animation: fade-in 2s forwards 1s;
+          animation: fade-in 2s forwards 1s;
+}
+
+.contactBody .toggle div::before {
+  height: 3.5px;
 }
 
 .contactBody header {
@@ -713,8 +721,8 @@ footer ul li:hover {
 }
 
 .contactBody .s2 iframe {
-  height: 550px;
-  margin-top: 5rem;
+  height: 530px;
+  margin-top: 3rem;
 }
 
 .contactBody .s3 {
@@ -887,6 +895,13 @@ footer ul li:hover {
     height: auto;
     width: 30%;
   }
+  .contactBody .s1 h1 {
+    font-size: 3rem;
+    margin-right: -20rem;
+  }
+  .contactBody .s1 ul {
+    margin-right: -20rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -923,6 +938,12 @@ footer ul li:hover {
     position: absolute;
     bottom: 11rem;
     right: 0;
+  }
+  .contactBody .s1 h1 {
+    margin-right: -15rem;
+  }
+  .contactBody .s1 ul {
+    margin-right: -15rem;
   }
 }
 
@@ -962,6 +983,36 @@ footer ul li:hover {
   .gallery img {
     width: 85%;
     height: auto;
+  }
+  .contactBody header {
+    background: url("../images/envelope.jpg") center/cover no-repeat;
+  }
+  .contactBody header #scroll {
+    bottom: 1rem;
+  }
+  .contactBody .s1 {
+    background: #102a42;
+    color: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contactBody .s1 h1 {
+    max-width: 100%;
+    margin-top: 2rem;
+  }
+  .contactBody .s1 ul {
+    max-width: 100%;
   }
 }
 
@@ -1118,6 +1169,12 @@ footer ul li:hover {
   }
   .allDigitalBody p {
     font-size: 1.2rem;
+  }
+  .contactBody .s1 h1 {
+    font-size: 3rem;
+  }
+  .contactBody .s1 ul li {
+    font-size: 2rem;
   }
 }
 

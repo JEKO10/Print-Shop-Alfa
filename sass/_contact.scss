@@ -1,6 +1,13 @@
 .contactBody {
-  background-color: #000;
   font-family: $primaryFont;
+
+  .toggle {
+    animation: fade-in 2s forwards 1s;
+
+    div::before {
+      height: 3.5px;
+    }
+  }
 
   header {
     min-height: 100vh;
@@ -30,7 +37,6 @@
   }
 
   .s1 {
-    // background-color: #67ccda;
     background: url("../images/contactt.png") center/cover no-repeat;
 
     h1 {
@@ -54,7 +60,7 @@
   }
 
   .s2 {
-    background: rgb(103, 204, 218);
+    background: $primaryColor;
     background: linear-gradient(
       180deg,
       rgba(103, 204, 218, 1) 60%,
@@ -67,8 +73,8 @@
     }
 
     iframe {
-      height: 550px;
-      margin-top: 5rem;
+      height: 530px;
+      margin-top: 3rem;
     }
   }
 

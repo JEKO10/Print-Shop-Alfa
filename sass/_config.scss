@@ -1,5 +1,6 @@
 $primaryFont: "Titillium Web", sans-serif;
 $transition: all 500ms ease;
+$primaryColor: #67ccda;
 
 @mixin flex($justify, $align) {
   display: flex;

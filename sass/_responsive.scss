@@ -22,6 +22,19 @@
       width: 30%;
     }
   }
+
+  .contactBody {
+    .s1 {
+      h1 {
+        font-size: 3rem;
+        margin-right: -20rem;
+      }
+
+      ul {
+        margin-right: -20rem;
+      }
+    }
+  }
 }
 
 @include mediaMediumLarge {
@@ -78,6 +91,18 @@
         position: absolute;
         bottom: 11rem;
         right: 0;
+      }
+    }
+  }
+
+  .contactBody {
+    .s1 {
+      h1 {
+        margin-right: -15rem;
+      }
+
+      ul {
+        margin-right: -15rem;
       }
     }
   }
@@ -141,6 +166,32 @@
     img {
       width: 85%;
       height: auto;
+    }
+  }
+
+  .contactBody header {
+    background: url("../images/envelope.jpg") center/cover no-repeat;
+
+    #scroll {
+      bottom: 1rem;
+    }
+  }
+
+  .contactBody {
+    .s1 {
+      background: #102a42;
+      color: #fff;
+      @include flex(center, center);
+      flex-direction: column;
+
+      h1 {
+        max-width: 100%;
+        margin-top: 2rem;
+      }
+
+      ul {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -331,6 +382,18 @@
 
     p {
       font-size: 1.2rem;
+    }
+  }
+
+  .contactBody {
+    .s1 {
+      h1 {
+        font-size: 3rem;
+      }
+
+      ul li {
+        font-size: 2rem;
+      }
     }
   }
 }

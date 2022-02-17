@@ -1,8 +1,7 @@
 .digitalBody {
   font-family: $primaryFont;
   animation: fade-in 1.5s forwards;
-  // background-color: #67ccda;
-  background: rgb(103, 204, 218);
+  background: $primaryColor;
   background: linear-gradient(
     180deg,
     rgba(103, 204, 218, 1) 80%,
