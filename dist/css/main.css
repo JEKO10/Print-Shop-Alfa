@@ -268,8 +268,8 @@ header > div img {
 
 @-webkit-keyframes headerOne {
   from {
-    -webkit-transform: translateY(-500%);
-            transform: translateY(-500%);
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
   }
   to {
     -webkit-transform: translateY(0%);
@@ -279,8 +279,8 @@ header > div img {
 
 @keyframes headerOne {
   from {
-    -webkit-transform: translateY(-500%);
-            transform: translateY(-500%);
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
   }
   to {
     -webkit-transform: translateY(0%);
@@ -290,8 +290,8 @@ header > div img {
 
 @-webkit-keyframes headerTwo {
   from {
-    -webkit-transform: translateY(-500%);
-            transform: translateY(-500%);
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
   }
   to {
     -webkit-transform: translateY(0%);
@@ -301,8 +301,8 @@ header > div img {
 
 @keyframes headerTwo {
   from {
-    -webkit-transform: translateY(-500%);
-            transform: translateY(-500%);
+    -webkit-transform: translateY(-600%);
+            transform: translateY(-600%);
   }
   to {
     -webkit-transform: translateY(0%);
@@ -517,6 +517,16 @@ footer ul li:hover {
   overflow-x: hidden;
 }
 
+.serviceBody .toggle {
+  -webkit-animation: fade-in 2s forwards;
+          animation: fade-in 2s forwards;
+  top: 45px;
+}
+
+.serviceBody .toggle div::before {
+  height: 3.5px;
+}
+
 .serviceBody nav {
   -webkit-animation: fade-in 2s forwards;
           animation: fade-in 2s forwards;
@@ -524,6 +534,11 @@ footer ul li:hover {
   height: 100px;
   position: fixed;
   background-color: rgba(0, 0, 0, 0.7);
+}
+
+.serviceBody .large,
+.serviceBody .other {
+  display: none;
 }
 
 .service {
@@ -891,6 +906,16 @@ footer ul li:hover {
   .shirt img {
     width: 35%;
   }
+  .service .digital h1 {
+    position: absolute;
+    top: 11rem;
+    left: 0;
+  }
+  .service .otherService h1 {
+    position: absolute;
+    bottom: 11rem;
+    right: 0;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -914,6 +939,14 @@ footer ul li:hover {
   }
   footer {
     padding: 0 30px;
+  }
+  .service .digital h1 {
+    top: 11rem;
+    max-width: 50px;
+  }
+  .service .otherService h1 {
+    bottom: 11rem;
+    max-width: 150px;
   }
 }
 
@@ -1030,6 +1063,31 @@ footer ul li:hover {
   }
   footer ul li {
     padding: 10px 30px;
+  }
+  .service {
+    display: none;
+  }
+  .serviceBody nav {
+    position: static;
+  }
+  .serviceBody .large,
+  .serviceBody .other {
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .serviceBody .large h1,
+  .serviceBody .other h1 {
+    font-size: 4.5rem;
+    margin: 5rem 0;
+    line-height: 75px;
   }
 }
 

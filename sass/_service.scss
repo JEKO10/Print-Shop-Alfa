@@ -3,12 +3,26 @@
   font-family: $primaryFont;
   overflow-x: hidden;
 
+  .toggle {
+    animation: fade-in 2s forwards;
+    top: 45px;
+
+    & div::before {
+      height: 3.5px;
+    }
+  }
+
   nav {
     animation: fade-in 2s forwards;
     width: 100%;
     height: 100px;
     position: fixed;
     background-color: rgba(0, 0, 0, 0.7);
+  }
+
+  .large,
+  .other {
+    display: none;
   }
 }
 
