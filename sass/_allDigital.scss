@@ -5,6 +5,11 @@
   color: #fff;
   text-align: center;
 
+  .toggle {
+    animation: fade-in 2s forwards 1s;
+    text-align: start;
+  }
+
   nav {
     animation: fade-in 2s forwards 1s;
   }

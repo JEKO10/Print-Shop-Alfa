@@ -740,7 +740,8 @@ footer ul li:hover {
   background: linear-gradient(180deg, #67ccda 80%, white 100%);
 }
 
-.digitalBody nav {
+.digitalBody nav,
+.digitalBody .toggle {
   -webkit-animation: fade-in 2s forwards 500ms;
           animation: fade-in 2s forwards 500ms;
 }
@@ -750,6 +751,7 @@ footer ul li:hover {
   text-align: center;
   margin: 2rem 0 1rem 0;
   color: #fff;
+  padding: 0 20px;
 }
 
 .digitalBody .otherContainer img {
@@ -778,7 +780,7 @@ footer ul li:hover {
   border-radius: 20px 20px 0px 0px;
   background: #f2f2f2;
   width: 450px;
-  margin: 2rem 0;
+  margin: 2rem 0.5rem;
 }
 
 .digitalBody .container > div img {
@@ -815,6 +817,12 @@ footer ul li:hover {
           animation: fade-in 2s forwards;
   color: #fff;
   text-align: center;
+}
+
+.allDigitalBody .toggle {
+  -webkit-animation: fade-in 2s forwards 1s;
+          animation: fade-in 2s forwards 1s;
+  text-align: start;
 }
 
 .allDigitalBody nav {
@@ -947,6 +955,13 @@ footer ul li:hover {
   .service .otherService h1 {
     bottom: 11rem;
     max-width: 150px;
+  }
+  .gallery {
+    padding: 0 20px;
+  }
+  .gallery img {
+    width: 85%;
+    height: auto;
   }
 }
 
@@ -1086,8 +1101,23 @@ footer ul li:hover {
   .serviceBody .large h1,
   .serviceBody .other h1 {
     font-size: 4.5rem;
-    margin: 5rem 0;
+    margin-bottom: 3rem;
     line-height: 75px;
+  }
+  .digitalBody .container {
+    padding-top: 0;
+  }
+  .digitalBody .container > div {
+    width: 300px;
+  }
+  .digitalBody .container > div .desc {
+    height: auto;
+  }
+  .allDigitalBody h1 {
+    font-size: 2rem;
+  }
+  .allDigitalBody p {
+    font-size: 1.2rem;
   }
 }
 
