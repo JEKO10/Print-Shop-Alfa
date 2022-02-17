@@ -11,6 +11,17 @@
       padding: 0 20px;
     }
   }
+
+  .shirt {
+    div h1 {
+      font-size: 4rem;
+    }
+
+    img {
+      height: auto;
+      width: 30%;
+    }
+  }
 }
 
 @include mediaMediumLarge {
@@ -28,6 +39,28 @@
       h2 {
         font-size: 2rem;
       }
+    }
+  }
+
+  .shirt {
+    div {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        max-width: 400px;
+      }
+
+      a {
+        font-size: 1.5rem;
+        padding: 15px 30px;
+      }
+    }
+
+    img {
+      width: 35%;
     }
   }
 }
@@ -48,6 +81,24 @@
         font-size: 1.5rem;
       }
     }
+  }
+
+  .shirt {
+    div {
+      h1 {
+        font-size: 2rem;
+      }
+
+      h3 {
+        font-size: 1rem;
+        max-width: 300px;
+        margin: 1rem auto 2rem auto;
+      }
+    }
+  }
+
+  footer {
+    padding: 0 30px;
   }
 }
 
@@ -70,6 +121,46 @@
           font-size: 2rem;
         }
       }
+    }
+  }
+
+  .large,
+  .other {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h3 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .shirt {
+    div {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      a {
+        padding: 10px 20px;
+      }
+    }
+
+    img {
+      width: 40%;
+    }
+  }
+
+  footer {
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      margin: 2rem 0 2rem;
+    }
+
+    ul {
+      margin-bottom: 3rem;
     }
   }
 }
@@ -98,6 +189,61 @@
       font-size: 1.5rem;
       padding: 0 15px;
       margin: 0 auto 5rem;
+    }
+  }
+
+  .large,
+  .other {
+    padding: 0 20px;
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    h3 {
+      margin: 2rem auto 3rem auto;
+    }
+
+    a {
+      font-size: 1.5rem;
+      padding: 15px 30px;
+    }
+  }
+
+  .other h1 {
+    font-size: 3rem;
+  }
+
+  .shirt {
+    padding: 30px 30px 50px;
+
+    div {
+      padding: 0;
+
+      h1 {
+        font-size: 2.5rem;
+      }
+
+      h3 {
+        font-size: 1.5rem;
+        max-width: 500px;
+      }
+
+      a {
+        padding: 15px 30px;
+      }
+    }
+
+    img {
+      display: none;
+    }
+  }
+
+  footer ul {
+    flex-wrap: wrap;
+
+    li {
+      padding: 10px 30px;
     }
   }
 }

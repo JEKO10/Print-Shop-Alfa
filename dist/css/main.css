@@ -857,6 +857,13 @@ footer ul li:hover {
     max-width: 500px;
     padding: 0 20px;
   }
+  .shirt div h1 {
+    font-size: 4rem;
+  }
+  .shirt img {
+    height: auto;
+    width: 30%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -870,6 +877,20 @@ footer ul li:hover {
   header > div > div h2 {
     font-size: 2rem;
   }
+  .shirt div h1 {
+    font-size: 3rem;
+  }
+  .shirt div h3 {
+    font-size: 1.5rem;
+    max-width: 400px;
+  }
+  .shirt div a {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+  }
+  .shirt img {
+    width: 35%;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -882,6 +903,17 @@ footer ul li:hover {
   }
   header > div > div h2 {
     font-size: 1.5rem;
+  }
+  .shirt div h1 {
+    font-size: 2rem;
+  }
+  .shirt div h3 {
+    font-size: 1rem;
+    max-width: 300px;
+    margin: 1rem auto 2rem auto;
+  }
+  footer {
+    padding: 0 30px;
   }
 }
 
@@ -898,6 +930,38 @@ footer ul li:hover {
   }
   header > div > div h2 {
     font-size: 2rem;
+  }
+  .large h1,
+  .other h1 {
+    font-size: 3rem;
+  }
+  .large h3,
+  .other h3 {
+    font-size: 1.5rem;
+  }
+  .shirt div h1 {
+    font-size: 1.5rem;
+  }
+  .shirt div a {
+    padding: 10px 20px;
+  }
+  .shirt img {
+    width: 40%;
+  }
+  footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  footer img {
+    margin: 2rem 0 2rem;
+  }
+  footer ul {
+    margin-bottom: 3rem;
   }
 }
 
@@ -920,6 +984,52 @@ footer ul li:hover {
     font-size: 1.5rem;
     padding: 0 15px;
     margin: 0 auto 5rem;
+  }
+  .large,
+  .other {
+    padding: 0 20px;
+  }
+  .large h1,
+  .other h1 {
+    font-size: 2.5rem;
+  }
+  .large h3,
+  .other h3 {
+    margin: 2rem auto 3rem auto;
+  }
+  .large a,
+  .other a {
+    font-size: 1.5rem;
+    padding: 15px 30px;
+  }
+  .other h1 {
+    font-size: 3rem;
+  }
+  .shirt {
+    padding: 30px 30px 50px;
+  }
+  .shirt div {
+    padding: 0;
+  }
+  .shirt div h1 {
+    font-size: 2.5rem;
+  }
+  .shirt div h3 {
+    font-size: 1.5rem;
+    max-width: 500px;
+  }
+  .shirt div a {
+    padding: 15px 30px;
+  }
+  .shirt img {
+    display: none;
+  }
+  footer ul {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  footer ul li {
+    padding: 10px 30px;
   }
 }
 
