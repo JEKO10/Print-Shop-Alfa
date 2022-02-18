@@ -34,6 +34,14 @@
         margin-right: -20rem;
       }
     }
+
+    .s2 {
+      iframe {
+        height: 430px;
+        width: 60%;
+        margin-top: 2rem;
+      }
+    }
   }
 }
 
@@ -103,6 +111,12 @@
 
       ul {
         margin-right: -15rem;
+      }
+    }
+
+    .s2 {
+      h1 {
+        font-size: 1.8rem;
       }
     }
   }
@@ -193,6 +207,20 @@
         max-width: 100%;
       }
     }
+
+    .s2 {
+      h1 {
+        padding: 0 20px;
+      }
+
+      iframe {
+        width: 90%;
+      }
+    }
+
+    .footer {
+      display: none;
+    }
   }
 }
 
@@ -255,6 +283,16 @@
 
     ul {
       margin-bottom: 3rem;
+    }
+  }
+
+  .contactBody .s3 {
+    h1 {
+      font-size: 3rem;
+    }
+
+    h2 {
+      font-size: 2rem;
     }
   }
 }
@@ -393,6 +431,27 @@
 
       ul li {
         font-size: 2rem;
+      }
+    }
+
+    .s2 {
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      iframe {
+        height: 350px;
+        width: 80%;
+      }
+    }
+
+    .s3 {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 1.5rem;
       }
     }
   }

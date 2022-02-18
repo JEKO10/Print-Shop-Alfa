@@ -731,12 +731,12 @@ footer ul li:hover {
 
 .contactBody .s3 h1 {
   font-size: 4rem;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .contactBody .s3 h2 {
   font-size: 2.5rem;
-  padding: 0 10px;
+  padding: 0 20px;
 }
 
 .digitalBody {
@@ -902,6 +902,11 @@ footer ul li:hover {
   .contactBody .s1 ul {
     margin-right: -20rem;
   }
+  .contactBody .s2 iframe {
+    height: 430px;
+    width: 60%;
+    margin-top: 2rem;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -944,6 +949,9 @@ footer ul li:hover {
   }
   .contactBody .s1 ul {
     margin-right: -15rem;
+  }
+  .contactBody .s2 h1 {
+    font-size: 1.8rem;
   }
 }
 
@@ -1014,6 +1022,15 @@ footer ul li:hover {
   .contactBody .s1 ul {
     max-width: 100%;
   }
+  .contactBody .s2 h1 {
+    padding: 0 20px;
+  }
+  .contactBody .s2 iframe {
+    width: 90%;
+  }
+  .contactBody .footer {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -1061,6 +1078,12 @@ footer ul li:hover {
   }
   footer ul {
     margin-bottom: 3rem;
+  }
+  .contactBody .s3 h1 {
+    font-size: 3rem;
+  }
+  .contactBody .s3 h2 {
+    font-size: 2rem;
   }
 }
 
@@ -1175,6 +1198,19 @@ footer ul li:hover {
   }
   .contactBody .s1 ul li {
     font-size: 2rem;
+  }
+  .contactBody .s2 h1 {
+    font-size: 1.5rem;
+  }
+  .contactBody .s2 iframe {
+    height: 350px;
+    width: 80%;
+  }
+  .contactBody .s3 h1 {
+    font-size: 3rem;
+  }
+  .contactBody .s3 h2 {
+    font-size: 1.5rem;
   }
 }
 
