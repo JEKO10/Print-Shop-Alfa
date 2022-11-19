@@ -12,11 +12,11 @@
 
 ## Project task
 
-This site is about local print shop. It is not finished yet, and design is mostly client's idea.
+This site is about a local print shop. It is not finished yet, and the design is mostly the client's idea.
 
 ## Project overview
 
-It's multi page website to learn more about print shop Alfa, their services and how to contact them. I used JS for fixed navbar. Website is fully responsive.
+It's a multi-page website to learn more about print shop Alfa, their services, and how to contact them. I used JS for the fixed navbar. The website is fully responsive.
 
 ## Built with
 
